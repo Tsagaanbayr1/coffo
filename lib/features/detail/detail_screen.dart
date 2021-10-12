@@ -1,3 +1,4 @@
+import 'package:coffo/core/core.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatelessWidget {
@@ -7,10 +8,7 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Detail Item',
-          style: TextStyle(color: Colors.black),
-        ),
+        title: Text('Detail Item'),
         leading: BackButton(
           color: Colors.black,
         ),
@@ -36,7 +34,7 @@ class DetailScreen extends StatelessWidget {
                     height: 300,
                     width: double.infinity,
                     color: Colors.grey[100],
-                    child: Image.asset('assets/coffee-envase.jpg'),
+                    child: Image.asset(Assets.assetsCoffeeEnvase),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(10),
@@ -58,7 +56,7 @@ class DetailScreen extends StatelessWidget {
                               Radius.circular(20),
                             ),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 10,
                             vertical: 5,
                           ),
@@ -113,8 +111,8 @@ class DetailScreen extends StatelessWidget {
                               Radius.circular(30),
                             ),
                           ),
-                          padding: EdgeInsets.all(10),
-                          margin: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
+                          margin: const EdgeInsets.all(10),
                           alignment: Alignment.center,
                           child: Text('250g'),
                         ),
@@ -127,8 +125,8 @@ class DetailScreen extends StatelessWidget {
                               Radius.circular(30),
                             ),
                           ),
-                          padding: EdgeInsets.all(10),
-                          margin: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
+                          margin: const EdgeInsets.all(10),
                           alignment: Alignment.center,
                           child: Text(
                             '500g',
@@ -146,8 +144,8 @@ class DetailScreen extends StatelessWidget {
                               Radius.circular(30),
                             ),
                           ),
-                          padding: EdgeInsets.all(10),
-                          margin: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
+                          margin: const EdgeInsets.all(10),
                           alignment: Alignment.center,
                           child: Text('750g'),
                         ),
